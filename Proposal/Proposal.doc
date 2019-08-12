@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=gb2312"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.2.5.2 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="2019-08-10T14:49:44.173000000"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin-left: 2cm; margin-right: 1cm; margin-top: 1cm; margin-bottom: 1cm }
+		p { margin-bottom: 0.25cm; background: transparent; line-height: 115%; background: transparent }
+		h1 { margin-bottom: 0.21cm; background: transparent; background: transparent; page-break-after: avoid }
+		h1.western { font-family: "Liberation Serif", serif; font-size: 24pt; font-weight: bold }
+		h1.cjk { font-family: "新宋体"; font-size: 24pt; font-weight: bold }
+		h1.ctl { font-family: "Arial"; font-size: 24pt; font-weight: bold }
+		h2 { margin-top: 0.35cm; margin-bottom: 0.21cm; background: transparent; background: transparent; page-break-after: avoid }
+		h2.western { font-family: "Liberation Serif", serif; font-size: 18pt; font-weight: bold }
+		h2.cjk { font-family: "新宋体"; font-size: 18pt; font-weight: bold }
+		h2.ctl { font-family: "Arial"; font-size: 18pt; font-weight: bold }
+		h3 { margin-top: 0.25cm; margin-bottom: 0.21cm; background: transparent; background: transparent; page-break-after: avoid }
+		h3.western { font-family: "Liberation Serif", serif; font-size: 14pt; font-weight: bold }
+		h3.cjk { font-family: "新宋体"; font-size: 14pt; font-weight: bold }
+		h3.ctl { font-family: "Arial"; font-size: 14pt; font-weight: bold }
+		em { font-style: italic }
+		strong { font-weight: bold }
+		a:link { color: #000080; so-language: zxx; text-decoration: underline }
+		a:visited { color: #800000; so-language: zxx; text-decoration: underline }
+	</style>
+</head>
+<body lang="zh-CN" link="#000080" vlink="#800000" dir="ltr"><h1 class="cjk">
+<font face="Liberation Serif, serif"><span lang="en-US">Machine
+Learning Engineer Nanodegree</span></font></h1>
+<h2 class="cjk"><a name="capstone-proposal"></a><font face="Liberation Serif, serif"><span lang="en-US">Capstone
+Proposal</span></font></h2>
+<p><font face="Liberation Serif, serif"><span lang="en-US">Gaofeng
+Bai<br/>
+August 9st, 2019</span></font></p>
+<h2 class="cjk"><a name="__DdeLink__144_2448752496"></a><a name="proposal"></a>
+<font face="Liberation Serif, serif"><span lang="en-US">Proposal</span></font></h2>
+<h3 class="cjk"><a name="__DdeLink__111_2448752496"></a><a name="domain-background"></a>
+<font face="Liberation Serif, serif"><span lang="en-US">Domain
+Background</span></font></h3>
+<p><a name="__DdeLink__16_683767165"></a><a name="__DdeLink__22_683767165"></a><a name="__DdeLink__26_683767165"></a><a name="__DdeLink__28_683767165"></a>
+<font face="Liberation Serif, serif"><span lang="en-US">The dogs vs
+cats problem is proposed for my capstone project in the Nanodegree
+program. This is in computer vision domain. Computer vision was first
+proposed in the late 1960s, and it was used to describe an artificial
+intelligence computer that can mimic human visual system. Now,
+computer vision is an interdisciplinary problem that solves how
+computer can understand digital images or videos in higher
+level(Wikipedia). The technique is used broadly in many fields, like
+robotics, self-driving cars and image recognition, etc. The dogs vs
+cats problem is an image recognition problem. Image recognition has a
+very wide application, like v<span style="font-weight: normal">isual
+search and face recognition on social media software, etc. The dogs
+vs cats is a Kaggle competitions that is proposed in 2013
+(https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/overview).
+This project may help visual search, and automated image
+organization. It also can help participator have better understand of
+the knowledge of deep learning and image
+recognition(https://imagga.com/blog/the-top-5-uses-of-image-recognition/).</span></span></font></p>
+<h3 class="cjk"><a name="problem-statement"></a><font face="Liberation Serif, serif"><span lang="en-US">Problem
+Statement</span></font></h3>
+<p><font face="Liberation Serif, serif"><span lang="en-US">The dogs
+vs cats is defined as an image classification problem. As mentioned
+in the requirement of the Udacity dogs vs cats project github readme,
+the deep learning algorithm is needed to be used to recognize if a
+dog or cat is in a target image. The input of the project is one
+colored image. The out put of the project is a result that tells if
+the image is a cat image or dog image. The test data is provided by
+Kaggle website. For each test image, the probability of the image is
+a dog will be submitted. The submissions will be scored based on the
+log loss function: </span></font>
+</p>
+<p align="center"><img src="Proposal_doc_5f1f525f4dbb2827.gif" name="Frame1" alt="Frame1" align="bottom" hspace="8" width="321" height="73" border="0"/>
+
+</p>
+<ul>
+	<li><p align="left" style="margin-bottom: 0cm"><font face="Liberation Serif, serif"><span lang="en-US"><i>n
+	is the number of images in the test set </i></span></font>
+	</p>
+	<li><p style="margin-bottom: 0cm"><img src="Proposal_doc_b2b113179db2f74f.gif" name="Object2" align="bottom" hspace="8" width="20" height="20" border="0"/>
+
+	<font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><span lang="en-US">is
+	the predicted probability of the image being a dog </span></font></span></font>
+	</p>
+</ul>
+<ul>
+	<li><p style="margin-bottom: 0cm"><a name="MathJax-Element-7-Frame"></a><a name="MathJax-Span-147"></a><a name="MathJax-Span-148"></a><a name="MathJax-Span-149"></a><a name="MathJax-Span-150"></a>
+	<img src="Proposal_doc_f8d7dc7c1b531e0a.gif" name="Object3" align="bottom" hspace="8" width="20" height="20" border="0"/>
+
+	<font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><span lang="en-US">is
+	1 if the image is a dog, 0 if cat </span></font></span></font>
+	</p>
+</ul>
+<ul>
+	<li><p><a name="MathJax-Element-8-Frame"></a><a name="MathJax-Span-152"></a><a name="MathJax-Span-153"></a><a name="MathJax-Span-154"></a><a name="MathJax-Span-155"></a><a name="MathJax-Span-156"></a><a name="MathJax-Span-157"></a><a name="MathJax-Span-158"></a>
+	<font face="Liberation Serif, serif"><span lang="en-US"><i>log</i>()
+	is the natural (base e) logarithm </span></font>
+	</p>
+</ul>
+<p><font face="Liberation Serif, serif"><span lang="en-US">The score
+can be used to measure the performance of the program. To pass the
+capstone project the score should be higher than the first 10% of the
+score that is list in Kaggle Public Leaderboard.</span></font></p>
+<h3 class="cjk"><a name="datasets-and-inputs"></a><font face="Liberation Serif, serif"><span lang="en-US">Datasets
+and Inputs</span></font></h3>
+<p><font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><span lang="en-US">The
+dataset is provided by
+Kaggle(<a href="https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data">https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data</a>).
+It contains 25000 images of dogs and cats for training. The labels of
+these images are part of their filename. There are also 12500 images
+that can be used to test, and their filenames are numeric id. </span></font><font face="Liberation Serif, serif"><span lang="en-US">This</span></font><font face="Liberation Serif, serif"><span lang="en-US">
+dataset is officially provided in this competition, so it should be
+very suitable for this project. The Oxford-IIIT Pet Dataset
+(http://www.robots.ox.ac.uk/~vgg/data/pets/) also can be used as
+training data, which include 37 category pet dataset</span></font><font face="Liberation Serif, serif"><span lang="en-US">s</span></font><font face="Liberation Serif, serif"><span lang="en-US">.
+It include</span></font><font face="Liberation Serif, serif"><span lang="en-US">s</span></font><font face="Liberation Serif, serif"><span lang="en-US">
+2371 cat images and 4978 dog images. These images have large
+variations in scale, pose and lighting, so using this dataset to
+train the network may avoid over-fitting. </span></font></span></font>
+</p>
+<h3 class="cjk"><a name="solution-statement"></a><font face="Liberation Serif, serif"><span lang="en-US">Solution
+Statement</span></font></h3>
+<p><a name="__DdeLink__29_2992927047"></a><font face="Liberation Serif, serif"><span lang="en-US">The
+solution of the problem is to use deep learning algorithm to train a
+neural network. A transfer learning will be used to increase the
+speed and accurate of the model. Several models, such as DenseNet
+16.08, Xception 16.10, NASNet 17.07, etc, can be used in the transfer
+learning that are listed in Udacity dogs vs cats github website. The
+best model will be used in the capstone project. The training and
+testing data is mentioned above. The LogLoss function that is
+mentioned before can be used to calculate the score of the model. The
+solution can be evaluated by comparing the score with Kaggle Public
+Leaderboard.</span></font></p>
+<h3 class="cjk"><a name="benchmark-model"></a><font face="Liberation Serif, serif"><span lang="en-US">Benchmark
+Model</span></font></h3>
+<p><a name="__DdeLink__29_29929270471"></a><a name="__DdeLink__42_2992927047"></a><a name="__DdeLink__45_2448752496"></a>
+<font face="Liberation Serif, serif"><span lang="en-US">As mentioned
+before, Kaggle provides a LogLoss function to calculate the score
+that can be used to evaluate the performance of the model. Kaggle
+Public Leaderboard provides a list of other competitors&rsquo; score,
+so the score can be used to benchmark the model.</span></font></p>
+<h3 class="cjk"><a name="evaluation-metrics"></a><font face="Liberation Serif, serif"><span lang="en-US">Evaluation
+Metrics</span></font></h3>
+<p><a name="__DdeLink__29_299292704711"></a><font face="Liberation Serif, serif"><span lang="en-US">The
+test images will be used to test the model. The model need to
+evaluate each image in the test dataset and calculate the probability
+of a dog in the image. The result will be submitted to Kaggle, and
+the LogLoss equation is used to evaluate the model. The figure 1 is
+an example of the result that need to submit to the Kaggle and
+calculate the score. The LogLoss equation is also used to evaluate
+other competitors&rsquo; models that are listed in the Kaggle Public
+Leaderboard and the project. </span></font>
+</p>
+<p><span id="Frame2" dir="ltr" style="float: left; width: 4.37cm; height: 4.02cm; border: none; padding: 0cm; background: #ffffff"><p style="margin-top: 0.21cm; margin-bottom: 0.21cm; line-height: 100%; background: transparent">
+	<img src="Proposal_doc_5db22a822a45eb3.jpg" name="Image1" align="bottom" width="100%" border="0"/>
+
+	<font face="Liberation Serif, serif"><span lang="en-US"><font face="Liberation Serif, serif"><font size="3" style="font-size: 12pt"><span lang="en-US"><i><br/>
+Figure
+	1: Example of result of test dataset</i></span></font></font></span></font></p>
+</span><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<p><br/>
+<br/>
+
+</p>
+<h3 class="cjk"><br/>
+<br/>
+
+</h3>
+<h3 class="cjk"><br/>
+<br/>
+
+</h3>
+<h3 class="cjk"><a name="project-design"></a><font face="Liberation Serif, serif"><span lang="en-US">Project
+Design</span></font></h3>
+<ol>
+	<li><p><a name="__DdeLink__38_2448752496"></a><font face="Liberation Serif, serif"><span lang="en-US">Input
+	dataset from
+	Kaggle(<a href="https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data">https://www.kaggle.com/c/dogs-vs-cats-redux-kernels-edition/data</a>)
+	and the Oxford-IIIT Pet Dataset</span></font></p>
+	<li><p><font face="Liberation Serif, serif"><span lang="en-US">Transfer
+	each image to four-dimensional tensor, which is the required format
+	for the TensorFlow package. The size of each image need to be scaled
+	into same size, for example (1, 224, 224, 3). </span></font>
+	</p>
+	<li><p><font face="Liberation Serif, serif"><span lang="en-US">The
+	Kaggle training dataset will be used to train the model. The
+	Oxford-IIIT Pet Dataset probably will be used if Kaggle training
+	dataset is not sufficient, which means the final score is not in the
+	first 10% of the Kaggle Public Leaderboard of this competation. The
+	Kaggle test dataset will be used to test the model, and the LogLoss
+	equation function will be used to evaluate the model to calculate
+	the scrore that is mentioned before.</span></font></p>
+	<li><p><font face="Liberation Serif, serif"><span lang="en-US">Data
+	augmentation will be used to increase the training dataset, which
+	can help to avoid overfitting and it can make the model has better
+	generalization. </span></font>
+	</p>
+	<li><p><font face="Liberation Serif, serif"><span lang="en-US">Some
+	models, such as DenseNet 16.08, Xception 16.10, NASNet 17.07, etc,
+	will be test and selected to do the transfer learning. The best
+	model will be used in the capstone project. The process of this step
+	basically is:</span></font></p>
+	<ol>
+		<li><p><font face="Liberation Serif, serif"><span lang="en-US">Load
+		the pre-trained model</span></font></p>
+		<li><p><font face="Liberation Serif, serif"><span lang="en-US">Extract
+		Features</span></font></p>
+		<li><p><font face="Liberation Serif, serif"><span lang="en-US">Create
+		my own model</span></font></p>
+		<li><p><font face="Liberation Serif, serif"><span lang="en-US">Train
+		the model</span></font></p>
+		<li><p><font face="Liberation Serif, serif"><span lang="en-US">Test
+		the model</span></font></p>
+	</ol>
+	<li><p><font face="Liberation Serif, serif"><span lang="en-US">Probably
+	will use the model to make an application, such as WeChat
+	application, Web application or Android application. </span></font>
+	</p>
+</ol>
+</body>
+</html>
